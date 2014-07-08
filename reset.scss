@@ -1,0 +1,37 @@
+/*RESET
+See how much of this we can remove
+.HP-TEST div, .HP-TEST span, .HP-TEST applet, .HP-TEST object, .HP-TEST iframe, .HP-TEST h1, .HP-TEST h2, .HP-TEST h3, .HP-TEST h4, .HP-TEST h5, .HP-TEST h6, .HP-TEST p, .HP-TEST blockquote, .HP-TEST pre, .HP-TEST a, .HP-TEST abbr, .HP-TEST acronym, .HP-TEST address, .HP-TEST big, .HP-TEST cite, .HP-TEST code, .HP-TEST del,.HP-TEST dfn, .HP-TEST em, .HP-TEST img, .HP-TEST ins, .HP-TEST kbd, .HP-TEST q, .HP-TEST s, .HP-TEST samp, .HP-TEST small, .HP-TEST strike, .HP-TEST strong, .HP-TEST sub, .HP-TEST sup, .HP-TEST tt, .HP-TEST var, .HP-TEST b, .HP-TEST u, .HP-TEST i, .HP-TEST center, .HP-TEST dl, .HP-TEST dt, .HP-TEST dd, .HP-TEST ol, .HP-TEST ul, .HP-TEST li, .HP-TEST fieldset, .HP-TEST form, .HP-TEST label, .HP-TEST legend, .HP-TEST table, .HP-TEST caption, .HP-TEST tbody, .HP-TEST tfoot, .HP-TEST thead, .HP-TEST tr, .HP-TEST th, .HP-TEST td, .HP-TEST article, .HP-TEST aside, .HP-TEST canvas, .HP-TEST details, .HP-TEST embed, .HP-TEST figure, .HP-TEST figcaption, .HP-TEST footer, .HP-TEST header, .HP-TEST hgroup, .HP-TEST menu, .HP-TEST nav, .HP-TEST output, .HP-TEST ruby, .HP-TEST section, .HP-TEST summary, .HP-TEST time, .HP-TEST mark, .HP-TEST audio, .HP-TEST video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+*/ 
+/* HTML5 display-role reset for older browsers */
+.HP-TEST article, .HP-TEST aside, .HP-TEST details, .HP-TEST figcaption, .HP-TEST figure, .HP-TEST footer, .HP-TEST header, .HP-TEST hgroup, .HP-TEST menu, .HP-TEST nav, .HP-TEST section {
+	display: block;
+}
+
+.HP-TEST ol, .HP-TEST ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.HP-TEST blockquote:before, .HP-TEST blockquote:after, .HP-TEST q:before, .HP-TEST q:after {
+	content: '';
+	content: none;
+}
+.HP-TEST table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.HP-Test form {margin: 0}
+.HP-Test p {
+	line-height: 1.5em;
+	margin: .5em 0;
+}
+
+a img {border:0px;}

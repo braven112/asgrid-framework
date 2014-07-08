@@ -1,0 +1,111 @@
+/*MODULE*/
+.module {
+	min-height: 1em;
+	overflow: hidden;
+	padding: 1.5em;
+	width: auto;
+}
+.module-content {
+	line-height: 1.5em;
+	color: $copy-color;
+}
+
+.module-advisorybgContainer {
+	@extend .module;	
+	width: auto;
+	background: #fcedac url(http://www.alaskaair.com/content/~/media/Images/onSite/icons/advisory) 1.5em center no-repeat;
+	display: block;
+	box-shadow: 0 0 1px $advisory-bordercolor;
+	padding-left: 4em;
+	min-height: 1em;
+	color: $advisory-bordercolor;
+}
+
+.module-advisoryContainer {
+	@extend .module-advisorybgContainer;	
+	background-color: $sitemodule-color;
+}
+
+.module-advisoryTextContainer {
+	@extend .module-advisoryContainer;	
+	background-image: none;
+	padding-left: 1.5em;
+}
+
+.module-whiteContainer {
+	@extend .module;	
+	width: auto;
+	background-color: $sitemodule-color;
+	display: block;
+	box-shadow: 0 0 1px $siteborder-color;
+
+}
+
+.module-darkaccentContainer {
+	width: auto;
+	display: block;
+	background-color: darken( $accent-color, 20% ) ;
+}
+
+.module-emslSalmonContainer {
+	width: auto;
+	display: block;
+	background-color: rgba( $emslsalmonwtransparency, .65 );
+}
+.module-emslBlueContainer {
+	width: auto;
+	display: block;
+	background-color: rgba( $emslbluewtransparency, .7 );
+}
+
+/* MODULE Horizontal Menu
+http://css-tricks.com/keep-margins-out-of-link-lists/ 
+*/
+.module-horizontalMenu li {display:inline-block;margin-right: 1em;line-height: 2em;}
+.module-horizontalMenu li a {padding:0 .3em 0 0; display:block;}
+
+/*MODULE Vertical Menu*/
+.module-verticalMenu li {line-height: 1.1em;}
+.module-verticalMenu li a {padding:0 0 1em 0; display:block;}
+
+
+
+/*MODULE Headlines*/
+.module-headlines { margin: 1em 0; font-weight: normal;}
+.module-headlines * { font-weight: normal;}
+.module-headlines h3 { color:$secondary-color;}
+.module-headlines h4 { margin: .1em 0; color:lighten($secondary-color, 20%);}
+
+/*MODULE emsl boxes*/
+.module-headlinesInBoxes { padding: 1em; }
+.module-headlinesInBoxes { margin: 1em 0; font-weight: normal;}
+.module-headlinesInBoxes * { font-weight: normal;}
+.module-headlinesInBoxes h3 { color: lighten($secondary-color, 100%)}
+.module-headlinesInBoxes h4 { margin: .1em 0; color: lighten($accent-color, 80%);}
+
+/*MODULE sign in form*/
+.module-form { margin: 1em 0 0 0; font-weight: normal;}
+.module-form * { font-weight: normal;}
+.module-form h3 { color:$secondary-color;}
+.module-form h4 { margin: .1em 0; color:lighten($secondary-color, 20%);}
+
+
+.module-Picturecontainer {
+	min-height: 12em;
+}
+.module-price { font-size: 2.5em; color: lighten($secondary-color, 100%); font-weight: normal;}
+
+.module-textarea {padding: 1em;font-size: 2em;}
+
+
+.module-hero {
+	min-height: 24em;
+	background-image: url(file:///C:/Users/bshields/Documents/06302014_visual-test/06302014_visual-test/images/istock_000011347788medium.jpg);
+	background-size: 100%;
+}
+
+.module-textareaWhite {
+	padding: 1em;
+	text-align: center;
+}
+.module-textareaWhite span {font-size: .5em}

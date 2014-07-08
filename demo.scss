@@ -1,0 +1,52 @@
+
+#emsl1 {
+	background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
+	background-position: right;
+	background-size: 200%;
+}
+#emsl2 {
+	background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
+	background-position: -0.5em -16.5em;
+	background-size: 230%;
+}
+
+
+
+#pic1 {
+background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-a-basset-hound-in-a-car-40581856-600x387.jpg);
+background-position: center;
+background-size: 129%;
+}
+
+#pic2 {
+background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-The-Oil-Pump-45429820-600x400.jpg);
+background-position: center;
+background-size: 132%;
+}
+#pic3 {
+background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-VOLKETSWIL-AUGUST-The-Ro-26779283-600x400.jpg);
+background-position: center;
+background-size: 132%;
+}
+
+.module-carouselImages img {width: 11.2em;height: auto;margin-right: .5em;}
+.module-carouselImages {min-height: 147px;}
+
+
+.module-textareaWhite {
+	padding: 1em;
+	font-size: 2em;
+	float: right;
+	color: $sitebtn-txtcolor;
+}
+.module-textareaWhite .headlines {
+	color: $sitebtn-txtcolor;
+}
+
+/*Force text on hero a little further down*/
+div.layout-40.module-textareaWhite {
+position: relative;
+top: 25px;
+}
+
+

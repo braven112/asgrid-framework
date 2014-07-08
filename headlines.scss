@@ -1,0 +1,54 @@
+/*HEADLINES*/
+
+/* .headlines class is applied to all h tags*/
+.headlines {
+	margin:0;
+	padding: 0;
+	line-height: 1em;
+	color: $base-color ;
+}
+.headlines-centered {
+	text-align: center;
+	margin: 1em auto;
+}
+h1 {
+	@extend .headlines;
+	font-size: 3.5em
+}
+
+h2 {
+	@extend .headlines;
+	font-size: 2.5em
+}
+
+h3 {
+	@extend .headlines;
+	font-size: 1.5em
+}
+h3.price {
+	float: right;
+	font-size: 1.5em;
+	font-weight: normal;
+}
+
+h4 {
+	@extend .headlines;
+	font-size: 1em
+}
+
+h5 {
+	@extend .headlines;
+	font-size: .8em;
+	font-weight: normal;
+	text-transform: uppercase;	
+}
+
+h6 {
+	@extend .headlines;
+	font-size: .67em;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+
+

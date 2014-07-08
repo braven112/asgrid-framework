@@ -1,0 +1,21 @@
+/*BUTTONS*/
+.btn {
+	border-radius: 0px;
+	background-color: $base-color;
+	width: 100%;
+	color: $sitebtn-txtcolor;
+	border:0px solid;
+	padding: .5em; 	
+	font-size: 1.25em;
+}
+.btn-primary {
+	background-color: $base-color;
+}
+.btn-primary:hover {
+	background-color: lighten($base-color, 8%);
+	cursor:pointer;
+}
+.btn-large {}
+.btn-small {}
+.btn-default {}
+.btn-secondary {}

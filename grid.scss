@@ -1,0 +1,175 @@
+/*grid*/
+.grid {
+	padding: .5em 0;
+	display: inline-block;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border-collapse: collapse;
+	vertical-align: top;
+
+}
+/*
+@media all and (max-width: 48em) {
+	body .grid {
+		display: block;
+		width: 100%;
+	}
+}
+*/
+.grid-container {
+	min-height: 5em;
+}
+.grid-Picturecontainer {
+	min-height: 12em;
+}
+
+/* Base 12 Grid System 5em=80px 60em=960px
+
+I'd like to figure out why I need to use this many decimals to make all the em's add up to 60em
+grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
+
+*/
+.grid-margin {margin-right: 3%;}
+.grid-1 {
+	width: 8.333%;
+}
+.grid-2 {
+	width: 16.667%;
+}
+.grid-3 {
+	@extend .grid-margin;
+	width: 25%;
+}
+.grid-4 {
+	@extend .grid-margin;
+	width: 33%;
+}
+.grid-4x3 {
+	margin-right: 3.5%;
+	width: 31%;
+	/*IE drops the last column so I moved it to 18.45 instead of 18.5*/
+}
+.grid-5 {
+	@extend .grid-margin;
+	width: 42%;
+}
+.grid-6 {
+	@extend .grid-margin;
+	width: 48.5%;
+}
+.grid-7 {
+	@extend .grid-margin;
+	width: 57%;
+}
+.grid-8 {
+	@extend .grid-margin;
+	width: 65%;
+}
+.grid-9 {
+	@extend .grid-margin;
+	width: 72%;
+}
+.grid-10 {
+	width: 83.333%;
+}
+.grid-11 {
+	width: 91.667%;
+}
+.grid-12 {
+	width: 100%;
+}
+
+/* Base 12 Grid System 5em=80px 60em=960px*/
+.grid-nomargin {
+	margin-right: 0em;
+	margin-left: -1.48%;
+}
+.grid-1-nomargin {
+	@extend .grid-1;
+	@extend .grid-nomargin;
+}
+.grid-2-nomargin {
+	@extend .grid-2;
+	@extend .grid-nomargin;	
+}
+.grid-3-nomargin {
+	@extend .grid-3;
+	@extend .grid-nomargin;
+}
+.grid-4-nomargin {
+	@extend .grid-4;
+	@extend .grid-nomargin;		
+}
+.grid-4x3-nomargin {
+	@extend .grid-4x3;
+	@extend .grid-nomargin;		
+}
+.grid-5-nomargin {
+	@extend .grid-5;
+	@extend .grid-nomargin;
+}
+.grid-6-nomargin {
+	@extend .grid-6;
+	@extend .grid-nomargin;
+}
+.grid-7-nomargin {
+	@extend .grid-7;
+	@extend .grid-nomargin;
+}
+.grid-8-nomargin {
+	@extend .grid-8;
+	@extend .grid-nomargin;
+}
+.grid-9-nomargin {
+	@extend .grid-9;
+	@extend .grid-nomargin;
+}
+.grid-10-nomargin {
+	@extend .grid-10;
+	@extend .grid-nomargin;
+}
+.grid-11-nomargin {
+	@extend .grid-11;
+	@extend .grid-nomargin;
+}
+.grid-12-nomargin {
+	width: 100%;
+}
+.grid-40 {
+	width: 40%;
+	padding: 0 1em;	
+}
+.grid-50 {
+	width: 50%;
+	padding: 0 1em;	
+}
+.grid-60 {
+	width: 60%;
+	padding: 0 1em;	
+}
+.grid-67 {
+	width: 67%;
+	padding: 0 1em;
+}
+
+.grid-leftinsidebox {
+	width: 67%;
+	min-height: 5em;
+	margin-left: -1.5em;
+}
+/*
+@media all and (max-width: 980px) {
+	.grid-leftinsidebox {
+		margin-left: 0em;
+		max-width: 24em;
+	}
+
+}
+*/
+
+
+.grid-modulePrice {
+	width: 100%;
+	text-align: right;
+}

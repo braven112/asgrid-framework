@@ -1,0 +1,78 @@
+body {background-color: $sitebg-color; margin: 0 auto}
+
+a {color:$sitelink-color;}
+a:hover {color:$sitelinkhover-color;}
+input {	font-family: $font-stack;}
+blockquote {
+	border-right: 1px solid $siteborder-color;
+	border-left: .5em solid $emslsalmon-color;	
+	padding: 1em;
+	margin: 1em;
+	display: inline-block;
+	color: lighten($copy-color, 20%);
+	max-width: 80%;
+}
+
+.HP-Test {
+	font-family: $font-stack;
+	font-size: 16px;
+	margin: 0 auto;
+	padding: 5em 0em 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	max-width: 960px;
+	color:$primary-color;
+	background-image: url(nav_top.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 986px;
+}
+/*
+@media all and (min-width: 75em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 1.25em;
+		max-width: 60em;
+	}
+
+}
+@media all and (min-width: 57em) and (max-width: 59.9999em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 0.9375em;
+		max-width: 57em;
+	}
+
+}
+@media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 0.875em;
+		width: 48em;
+	}
+
+}
+@media all and (max-width: 47.9375em) {
+	.HP-Test, .FOOTER-Test {
+		padding: 1em;
+	}
+
+}*/
+
+.FOOTER-Test {
+	font-family: $font-stack;
+	font-size: 16px;
+	margin: 4em auto 0;
+	padding: 0em;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	width: 100%;
+	color:$primary-color;
+	background-color: $primary-color;
+}
+
+
+hr {
+	border: none;
+	border-bottom: 1px solid $siteborder-color;
+	margin: 1em 0 0 0;
+}

@@ -1,0 +1,27 @@
+/*Variables Used*/
+
+$font-stack: ScalaSans, Helvetica, sans-serif;
+
+/*Main Colors Used  #3498db  */
+$primary-color: #00245A;
+$secondary-color: #40639B;
+$base-color: $secondary-color;
+$advisory-color: #fcedac;
+$advisory-bordercolor: #54112b;
+
+/*Grayscale Colors Used*/
+$accent-color: #DDD;
+$copy-color: #454545;
+
+/*AS.com Colors Used*/
+$sitebg-color: #F2F5FA;
+$siteborder-color :#DCDCDC;
+$sitebtn-txtcolor :#FFF;
+$sitemodule-color :#FFF;
+$d2eGreen: #008480;
+$sitelink-color: #9A6220;
+$sitelinkhover-color: #4770A2;
+$emslsalmon-color: #f26664;
+$emslsalmonwtransparency:darken($emslsalmon-color, 5%);
+$emslblue-color: #82a2d1;
+$emslbluewtransparency:darken($emslblue-color, 20%);

@@ -1,0 +1,1551 @@
+@import "http://www.alaskaair.com/content/~/media/Files/fonts/ScalaSansv2/scalasans.css";
+/*RESET
+See how much of this we can remove
+.HP-TEST div, .HP-TEST span, .HP-TEST applet, .HP-TEST object, .HP-TEST iframe, .HP-TEST h1, .HP-TEST h2, .HP-TEST h3, .HP-TEST h4, .HP-TEST h5, .HP-TEST h6, .HP-TEST p, .HP-TEST blockquote, .HP-TEST pre, .HP-TEST a, .HP-TEST abbr, .HP-TEST acronym, .HP-TEST address, .HP-TEST big, .HP-TEST cite, .HP-TEST code, .HP-TEST del,.HP-TEST dfn, .HP-TEST em, .HP-TEST img, .HP-TEST ins, .HP-TEST kbd, .HP-TEST q, .HP-TEST s, .HP-TEST samp, .HP-TEST small, .HP-TEST strike, .HP-TEST strong, .HP-TEST sub, .HP-TEST sup, .HP-TEST tt, .HP-TEST var, .HP-TEST b, .HP-TEST u, .HP-TEST i, .HP-TEST center, .HP-TEST dl, .HP-TEST dt, .HP-TEST dd, .HP-TEST ol, .HP-TEST ul, .HP-TEST li, .HP-TEST fieldset, .HP-TEST form, .HP-TEST label, .HP-TEST legend, .HP-TEST table, .HP-TEST caption, .HP-TEST tbody, .HP-TEST tfoot, .HP-TEST thead, .HP-TEST tr, .HP-TEST th, .HP-TEST td, .HP-TEST article, .HP-TEST aside, .HP-TEST canvas, .HP-TEST details, .HP-TEST embed, .HP-TEST figure, .HP-TEST figcaption, .HP-TEST footer, .HP-TEST header, .HP-TEST hgroup, .HP-TEST menu, .HP-TEST nav, .HP-TEST output, .HP-TEST ruby, .HP-TEST section, .HP-TEST summary, .HP-TEST time, .HP-TEST mark, .HP-TEST audio, .HP-TEST video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+*/
+/* HTML5 display-role reset for older browsers */
+.HP-TEST article, .HP-TEST aside, .HP-TEST details, .HP-TEST figcaption, .HP-TEST figure, .HP-TEST footer, .HP-TEST header, .HP-TEST hgroup, .HP-TEST menu, .HP-TEST nav, .HP-TEST section {
+  display: block; }
+
+.HP-TEST ol, .HP-TEST ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.HP-TEST blockquote:before, .HP-TEST blockquote:after, .HP-TEST q:before, .HP-TEST q:after {
+  content: '';
+  content: none; }
+
+.HP-TEST table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.HP-Test form {
+  margin: 0; }
+
+.HP-Test p {
+  line-height: 1.5em;
+  margin: .5em 0; }
+
+a img {
+  border: 0px; }
+
+/*Variables Used*/
+/*Main Colors Used  #3498db  */
+/*Grayscale Colors Used*/
+/*AS.com Colors Used*/
+body {
+  background-color: #f2f5fa;
+  margin: 0 auto; }
+
+a {
+  color: #9a6220; }
+
+a:hover {
+  color: #4770a2; }
+
+input {
+  font-family: ScalaSans, Helvetica, sans-serif; }
+
+blockquote {
+  border-right: 1px solid gainsboro;
+  border-left: 0.5em solid #f26664;
+  padding: 1em;
+  margin: 1em;
+  display: inline-block;
+  color: #787878;
+  max-width: 80%; }
+
+.HP-Test {
+  font-family: ScalaSans, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+  padding: 5em 0em 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  max-width: 960px;
+  color: #00245a;
+  background-image: url(nav_top.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 986px; }
+
+/*
+@media all and (min-width: 75em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 1.25em;
+		max-width: 60em;
+	}
+
+}
+@media all and (min-width: 57em) and (max-width: 59.9999em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 0.9375em;
+		max-width: 57em;
+	}
+
+}
+@media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
+	.HP-Test, .FOOTER-Test {
+		font-size: 0.875em;
+		width: 48em;
+	}
+
+}
+@media all and (max-width: 47.9375em) {
+	.HP-Test, .FOOTER-Test {
+		padding: 1em;
+	}
+
+}*/
+.FOOTER-Test {
+  font-family: ScalaSans, Helvetica, sans-serif;
+  font-size: 16px;
+  margin: 4em auto 0;
+  padding: 0em;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  width: 100%;
+  color: #00245a;
+  background-color: #00245a; }
+
+hr {
+  border: none;
+  border-bottom: 1px solid gainsboro;
+  margin: 1em 0 0 0; }
+
+/*grid*/
+/* Row CSS from http://foundation.zurb.com/ */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  padding: .5em 0; }
+
+.row:before, .row:after {
+  content: " ";
+  display: table; }
+
+.row:after {
+  clear: both; }
+
+.row.collapse > .grid,
+.row.collapse > .grid {
+  padding-left: 0;
+  padding-right: 0; }
+
+.row.collapse .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.row .row {
+  width: auto;
+  margin-left: -0.9375em;
+  margin-right: -0.9375em;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: none; }
+
+.row .row:before, .row .row:after {
+  content: " ";
+  display: table; }
+
+.row .row:after {
+  clear: both; }
+
+.row .row.collapse {
+  width: auto;
+  margin: 0;
+  max-width: none; }
+
+.row .row.collapse:before, .row .row.collapse:after {
+  content: " ";
+  display: table; }
+
+.row .row.collapse:after {
+  clear: both; }
+
+.grid {
+  padding: .5em 0;
+  display: inline-block;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+  display: inline-block; }
+
+/*
+@media all and (max-width: 48em) {
+	body .grid {
+		display: block;
+		width: 100%;
+	}
+}
+*/
+.grid-container {
+  min-height: 5em; }
+
+/* Base 12 Grid System 5em=80px 60em=960px
+
+I'd like to figure out why I need to use this many decimals to make all the em's add up to 60em
+grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
+
+*/
+.grid-margin, .grid-3, .grid-3-nomargin, .grid-4, .grid-4-nomargin, .grid-5, .grid-5-nomargin, .grid-6, .grid-6-nomargin, .grid-7, .grid-7-nomargin, .grid-8, .grid-8-nomargin, .grid-9, .grid-9-nomargin {
+  margin-right: 2.12em; }
+
+.grid-1, .grid-1-nomargin {
+  width: 5.75em; }
+
+.grid-2, .grid-2-nomargin {
+  width: 10.75em; }
+
+.grid-3, .grid-3-nomargin {
+  width: 13.8em; }
+
+.grid-4, .grid-4-nomargin {
+  width: 18.8em; }
+
+.grid-4x3, .grid-4x3-nomargin {
+  margin-right: 2em;
+  width: 18.45em;
+  /*IE drops the last column so I moved it to 18.45 instead of 18.5*/ }
+
+.grid-5, .grid-5-nomargin {
+  width: 23.8em; }
+
+.grid-6, .grid-6-nomargin {
+  width: 28.8em; }
+
+.grid-7, .grid-7-nomargin {
+  width: 33.8em; }
+
+.grid-8, .grid-8-nomargin {
+  width: 38.8em; }
+
+.grid-9, .grid-9-nomargin {
+  width: 43.8em; }
+
+.grid-10, .grid-10-nomargin {
+  width: 49em; }
+
+.grid-11, .grid-11-nomargin {
+  width: 54em; }
+
+.grid-12 {
+  width: 60em; }
+
+/* Base 12 Grid System 5em=80px 60em=960px*/
+.grid-nomargin, .grid-1-nomargin, .grid-2-nomargin, .grid-3-nomargin, .grid-4-nomargin, .grid-4x3-nomargin, .grid-5-nomargin, .grid-6-nomargin, .grid-7-nomargin, .grid-8-nomargin, .grid-9-nomargin, .grid-10-nomargin, .grid-11-nomargin {
+  margin-right: 0em;
+  margin-left: -.1em; }
+
+.grid-12-nomargin {
+  width: 60em; }
+
+.grid-40 {
+  width: 40%;
+  padding: 0 1em; }
+
+.grid-50 {
+  width: 50%;
+  padding: 0 1em; }
+
+.grid-60 {
+  width: 60%;
+  padding: 0 1em; }
+
+.grid-67 {
+  width: 67%;
+  padding: 0 1em; }
+
+.grid-leftinsidebox {
+  width: 67%;
+  min-height: 5em;
+  margin-left: -1.5em; }
+
+/*
+@media all and (max-width: 980px) {
+	.grid-leftinsidebox {
+		margin-left: 0em;
+		max-width: 24em;
+	}
+
+}
+*/
+.grid-modulePrice {
+  width: 100%;
+  text-align: right; }
+
+/*MODULE*/
+.module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer {
+  min-height: 1em;
+  overflow: hidden;
+  padding: 1.5em;
+  width: auto; }
+
+.module-content {
+  line-height: 1.5em;
+  color: #454545; }
+
+.module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer {
+  width: auto;
+  background: #fcedac url(http://www.alaskaair.com/content/~/media/Images/onSite/icons/advisory) 1.5em center no-repeat;
+  display: block;
+  box-shadow: 0 0 1px #54112b;
+  padding-left: 4em;
+  min-height: 1em;
+  color: #54112b; }
+
+.module-advisoryContainer, .module-advisoryTextContainer {
+  background-color: white; }
+
+.module-advisoryTextContainer {
+  background-image: none;
+  padding-left: 1.5em; }
+
+.module-whiteContainer {
+  width: auto;
+  background-color: white;
+  display: block;
+  box-shadow: 0 0 1px gainsboro; }
+
+.module-darkaccentContainer {
+  width: auto;
+  display: block;
+  background-color: #aaaaaa; }
+
+.module-emslSalmonContainer {
+  width: auto;
+  display: block;
+  background-color: rgba(240, 79, 76, 0.65); }
+
+.module-emslBlueContainer {
+  width: auto;
+  display: block;
+  background-color: rgba(64, 108, 173, 0.7); }
+
+/* MODULE Horizontal Menu
+http://css-tricks.com/keep-margins-out-of-link-lists/ 
+*/
+.module-horizontalMenu li {
+  display: inline-block;
+  margin-right: 1em;
+  line-height: 2em; }
+
+.module-horizontalMenu li a {
+  padding: 0 .3em 0 0;
+  display: block; }
+
+/*MODULE Vertical Menu*/
+.module-verticalMenu li {
+  line-height: 1.1em; }
+
+.module-verticalMenu li a {
+  padding: 0 0 1em 0;
+  display: block; }
+
+/*MODULE Headlines*/
+.module-headlines {
+  margin: 1em 0;
+  font-weight: normal; }
+
+.module-headlines * {
+  font-weight: normal; }
+
+.module-headlines h3 {
+  color: #40639b; }
+
+.module-headlines h4 {
+  margin: .1em 0;
+  color: #7997c8; }
+
+/*MODULE emsl boxes*/
+.module-headlinesInBoxes {
+  padding: 1em; }
+
+.module-headlinesInBoxes {
+  margin: 1em 0;
+  font-weight: normal; }
+
+.module-headlinesInBoxes * {
+  font-weight: normal; }
+
+.module-headlinesInBoxes h3 {
+  color: white; }
+
+.module-headlinesInBoxes h4 {
+  margin: .1em 0;
+  color: white; }
+
+/*MODULE sign in form*/
+.module-form {
+  margin: 1em 0 0 0;
+  font-weight: normal; }
+
+.module-form * {
+  font-weight: normal; }
+
+.module-form h3 {
+  color: #40639b; }
+
+.module-form h4 {
+  margin: .1em 0;
+  color: #7997c8; }
+
+.module-Picturecontainer {
+  min-height: 12em; }
+
+.module-price {
+  font-size: 2.5em;
+  color: white;
+  font-weight: normal; }
+
+.module-textarea {
+  padding: 1em;
+  font-size: 2em; }
+
+.module-hero {
+  min-height: 24em;
+  background-image: url(file:///C:/Users/bshields/Documents/06302014_visual-test/06302014_visual-test/images/istock_000011347788medium.jpg);
+  background-size: 100%; }
+
+.module-textareaWhite {
+  padding: 1em;
+  text-align: center; }
+
+.module-textareaWhite span {
+  font-size: .5em; }
+
+/*BUTTONS*/
+.btn {
+  border-radius: 0px;
+  background-color: #40639b;
+  width: 100%;
+  color: white;
+  border: 0px solid;
+  padding: .5em;
+  font-size: 1.25em; }
+
+.btn-primary {
+  background-color: #40639b; }
+
+.btn-primary:hover {
+  background-color: #4e76b6;
+  cursor: pointer; }
+
+/*HEADLINES*/
+/* .headlines class is applied to all h tags*/
+.headlines, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  color: #40639b; }
+
+.headlines-centered {
+  text-align: center;
+  margin: 1em auto; }
+
+h1 {
+  font-size: 3.5em; }
+
+h2 {
+  font-size: 2.5em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h3.price {
+  float: right;
+  font-size: 1.5em;
+  font-weight: normal; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: .8em;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+h6 {
+  font-size: .67em;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+/*FOOTER*/
+.footer {
+  margin: 0 auto;
+  padding: 3em 0;
+  font-size: .8em;
+  color: #787878;
+  line-height: 1.5em;
+  width: 960px; }
+
+.footer a {
+  color: #787878;
+  margin: 0 .8em 0 .8em; }
+
+.footer a.first, a.AdChoices {
+  margin-left: 0; }
+
+/*My Account Sign in Module*/
+.module-MyAccountRememberMe {
+  font-size: .8em; }
+
+.module-MyAccountSignUp {
+  float: right;
+  margin-top: .3em; }
+
+.module-MyAccountSignUp a#signUpLink {
+  font-size: .9em; }
+
+.module-MyAccountSignIn {
+  margin: 1em 0 0 0; }
+
+.module-myAccountInput {
+  width: 100%;
+  padding: .3em; }
+
+.module-MyAccount #divPassword {
+  width: 100%;
+  padding: .3em; }
+
+.module-myAccountInput {
+  margin-bottom: .5em; }
+
+.module-form label + a {
+  font-size: 0.9em;
+  line-height: 1.5em; }
+
+.formhelp {
+  font-size: .8em;
+  float: right; }
+
+/* Webicons by Adam Fairhead: http://adamfairhead.com */
+.webicon {
+  display: inline-block;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  text-indent: -999em;
+  text-align: left;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px; }
+
+.webicon:hover {
+  margin: -1px 0 1px;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25); }
+
+.webicon.small {
+  width: 20px;
+  height: 20px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+.webicon.large {
+  width: 48px;
+  height: 48px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px; }
+
+/* restore webicons accessibility for print */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  .webicon {
+    text-indent: 0;
+    width: auto !important;
+    height: auto !important;
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important; } }
+.no-svg .webicon.f500px {
+  background: url("webicons/webicon-f500px-m.png"); }
+
+.no-svg .webicon.f500px.large {
+  background: url("webicons/webicon-f500px.png"); }
+
+.no-svg .webicon.f500px.small {
+  background: url("webicons/webicon-f500px-s.png"); }
+
+.svg .webicon.f500px {
+  background: url("webicons/webicon-f500px.svg"); }
+
+.no-svg .webicon.aboutme {
+  background: url("webicons/webicon-aboutme-m.png"); }
+
+.no-svg .webicon.aboutme.large {
+  background: url("webicons/webicon-aboutme.png"); }
+
+.no-svg .webicon.aboutme.small {
+  background: url("webicons/webicon-aboutme-s.png"); }
+
+.svg .webicon.aboutme {
+  background: url("webicons/webicon-aboutme.svg"); }
+
+.no-svg .webicon.adn {
+  background: url("webicons/webicon-adn-m.png"); }
+
+.no-svg .webicon.adn.large {
+  background: url("webicons/webicon-adn.png"); }
+
+.no-svg .webicon.adn.small {
+  background: url("webicons/webicon-adn-s.png"); }
+
+.svg .webicon.adn {
+  background: url("webicons/webicon-adn.svg"); }
+
+.no-svg .webicon.android {
+  background: url("webicons/webicon-android-m.png"); }
+
+.no-svg .webicon.android.large {
+  background: url("webicons/webicon-android.png"); }
+
+.no-svg .webicon.android.small {
+  background: url("webicons/webicon-android-s.png"); }
+
+.svg .webicon.android {
+  background: url("webicons/webicon-android.svg"); }
+
+.no-svg .webicon.apple {
+  background: url("webicons/webicon-apple-m.png"); }
+
+.no-svg .webicon.apple.large {
+  background: url("webicons/webicon-apple.png"); }
+
+.no-svg .webicon.apple.small {
+  background: url("webicons/webicon-apple-s.png"); }
+
+.svg .webicon.apple {
+  background: url("webicons/webicon-apple.svg"); }
+
+.no-svg .webicon.behance {
+  background: url("webicons/webicon-behance-m.png"); }
+
+.no-svg .webicon.behance.large {
+  background: url("webicons/webicon-behance.png"); }
+
+.no-svg .webicon.behance.small {
+  background: url("webicons/webicon-behance-s.png"); }
+
+.svg .webicon.behance {
+  background: url("webicons/webicon-behance.svg"); }
+
+.no-svg .webicon.bitbucket {
+  background: url("webicons/webicon-bitbucket-m.png"); }
+
+.no-svg .webicon.bitbucket.large {
+  background: url("webicons/webicon-bitbucket.png"); }
+
+.no-svg .webicon.bitbucket.small {
+  background: url("webicons/webicon-bitbucket-s.png"); }
+
+.svg .webicon.bitbucket {
+  background: url("webicons/webicon-bitbucket.svg"); }
+
+.no-svg .webicon.blogger {
+  background: url("webicons/webicon-blogger-m.png"); }
+
+.no-svg .webicon.blogger.large {
+  background: url("webicons/webicon-blogger.png"); }
+
+.no-svg .webicon.blogger.small {
+  background: url("webicons/webicon-blogger-s.png"); }
+
+.svg .webicon.blogger {
+  background: url("webicons/webicon-blogger.svg"); }
+
+.no-svg .webicon.branch {
+  background: url("webicons/webicon-branch-m.png"); }
+
+.no-svg .webicon.branch.large {
+  background: url("webicons/webicon-branch.png"); }
+
+.no-svg .webicon.branch.small {
+  background: url("webicons/webicon-branch-s.png"); }
+
+.svg .webicon.branch {
+  background: url("webicons/webicon-branch.svg"); }
+
+.no-svg .webicon.coderwall {
+  background: url("webicons/webicon-coderwall-m.png"); }
+
+.no-svg .webicon.coderwall.large {
+  background: url("webicons/webicon-coderwall.png"); }
+
+.no-svg .webicon.coderwall.small {
+  background: url("webicons/webicon-coderwall-s.png"); }
+
+.svg .webicon.coderwall {
+  background: url("webicons/webicon-coderwall.svg"); }
+
+.no-svg .webicon.creativecloud {
+  background: url("webicons/webicon-creativecloud-m.png"); }
+
+.no-svg .webicon.creativecloud.large {
+  background: url("webicons/webicon-creativecloud.png"); }
+
+.no-svg .webicon.creativecloud.small {
+  background: url("webicons/webicon-creativecloud-s.png"); }
+
+.svg .webicon.creativecloud {
+  background: url("webicons/webicon-creativecloud.svg"); }
+
+.no-svg .webicon.deviantart {
+  background: url("webicons/webicon-deviantart-m.png"); }
+
+.no-svg .webicon.deviantart.large {
+  background: url("webicons/webicon-deviantart.png"); }
+
+.no-svg .webicon.deviantart.small {
+  background: url("webicons/webicon-deviantart-s.png"); }
+
+.svg .webicon.deviantart {
+  background: url("webicons/webicon-deviantart.svg"); }
+
+.no-svg .webicon.dribbble {
+  background: url("webicons/webicon-dribbble-m.png"); }
+
+.no-svg .webicon.dribbble.large {
+  background: url("webicons/webicon-dribbble.png"); }
+
+.no-svg .webicon.dribbble.small {
+  background: url("webicons/webicon-dribbble-s.png"); }
+
+.svg .webicon.dribbble {
+  background: url("webicons/webicon-dribbble.svg"); }
+
+.no-svg .webicon.dropbox {
+  background: url("webicons/webicon-dropbox-m.png"); }
+
+.no-svg .webicon.dropbox.large {
+  background: url("webicons/webicon-dropbox.png"); }
+
+.no-svg .webicon.dropbox.small {
+  background: url("webicons/webicon-dropbox-s.png"); }
+
+.svg .webicon.dropbox {
+  background: url("webicons/webicon-dropbox.svg"); }
+
+.no-svg .webicon.evernote {
+  background: url("webicons/webicon-evernote-m.png"); }
+
+.no-svg .webicon.evernote.large {
+  background: url("webicons/webicon-evernote.png"); }
+
+.no-svg .webicon.evernote.small {
+  background: url("webicons/webicon-evernote-s.png"); }
+
+.svg .webicon.evernote {
+  background: url("webicons/webicon-evernote.svg"); }
+
+.no-svg .webicon.fairheadcreative {
+  background: url("webicons/webicon-fairheadcreative-m.png"); }
+
+.no-svg .webicon.fairheadcreative.large {
+  background: url("webicons/webicon-fairheadcreative.png"); }
+
+.no-svg .webicon.fairheadcreative.small {
+  background: url("webicons/webicon-fairheadcreative-s.png"); }
+
+.svg .webicon.fairheadcreative {
+  background: url("webicons/webicon-fairheadcreative.svg"); }
+
+.no-svg .webicon.facebook {
+  background: url("webicons/webicon-facebook-m.png"); }
+
+.no-svg .webicon.facebook.large {
+  background: url("webicons/webicon-facebook.png"); }
+
+.no-svg .webicon.facebook.small {
+  background: url("webicons/webicon-facebook-s.png"); }
+
+.svg .webicon.facebook {
+  background: url("webicons/webicon-facebook.svg"); }
+
+.no-svg .webicon.flickr {
+  background: url("webicons/webicon-flickr-m.png"); }
+
+.no-svg .webicon.flickr.large {
+  background: url("webicons/webicon-flickr.png"); }
+
+.no-svg .webicon.flickr.small {
+  background: url("webicons/webicon-flickr-s.png"); }
+
+.svg .webicon.flickr {
+  background: url("webicons/webicon-flickr.svg"); }
+
+.no-svg .webicon.foursquare {
+  background: url("webicons/webicon-foursquare-m.png"); }
+
+.no-svg .webicon.foursquare.large {
+  background: url("webicons/webicon-foursquare.png"); }
+
+.no-svg .webicon.foursquare.small {
+  background: url("webicons/webicon-foursquare-s.png"); }
+
+.svg .webicon.foursquare {
+  background: url("webicons/webicon-foursquare.svg"); }
+
+.no-svg .webicon.git {
+  background: url("webicons/webicon-git-m.png"); }
+
+.no-svg .webicon.git.large {
+  background: url("webicons/webicon-git.png"); }
+
+.no-svg .webicon.git.small {
+  background: url("webicons/webicon-git-s.png"); }
+
+.svg .webicon.git {
+  background: url("webicons/webicon-git.svg"); }
+
+.no-svg .webicon.github {
+  background: url("webicons/webicon-github-m.png"); }
+
+.no-svg .webicon.github.large {
+  background: url("webicons/webicon-github.png"); }
+
+.no-svg .webicon.github.small {
+  background: url("webicons/webicon-github-s.png"); }
+
+.svg .webicon.github {
+  background: url("webicons/webicon-github.svg"); }
+
+.no-svg .webicon.goodreads {
+  background: url("webicons/webicon-goodreads-m.png"); }
+
+.no-svg .webicon.goodreads.large {
+  background: url("webicons/webicon-goodreads.png"); }
+
+.no-svg .webicon.goodreads.small {
+  background: url("webicons/webicon-goodreads-s.png"); }
+
+.svg .webicon.goodreads {
+  background: url("webicons/webicon-goodreads.svg"); }
+
+.no-svg .webicon.google {
+  background: url("webicons/webicon-google-m.png"); }
+
+.no-svg .webicon.google.large {
+  background: url("webicons/webicon-google.png"); }
+
+.no-svg .webicon.google.small {
+  background: url("webicons/webicon-google-s.png"); }
+
+.svg .webicon.google {
+  background: url("webicons/webicon-google.svg"); }
+
+.no-svg .webicon.googleplay {
+  background: url("webicons/webicon-googleplay-m.png"); }
+
+.no-svg .webicon.googleplay.large {
+  background: url("webicons/webicon-googleplay.png"); }
+
+.no-svg .webicon.googleplay.small {
+  background: url("webicons/webicon-googleplay-s.png"); }
+
+.svg .webicon.googleplay {
+  background: url("webicons/webicon-googleplay.svg"); }
+
+.no-svg .webicon.googleplus {
+  background: url("webicons/webicon-googleplus-m.png"); }
+
+.no-svg .webicon.googleplus.large {
+  background: url("webicons/webicon-googleplus.png"); }
+
+.no-svg .webicon.googleplus.small {
+  background: url("webicons/webicon-googleplus-s.png"); }
+
+.svg .webicon.googleplus {
+  background: url("webicons/webicon-googleplus.svg"); }
+
+.no-svg .webicon.hangouts {
+  background: url("webicons/webicon-hangouts-m.png"); }
+
+.no-svg .webicon.hangouts.large {
+  background: url("webicons/webicon-hangouts.png"); }
+
+.no-svg .webicon.hangouts.small {
+  background: url("webicons/webicon-hangouts-s.png"); }
+
+.svg .webicon.hangouts {
+  background: url("webicons/webicon-hangouts.svg"); }
+
+.no-svg .webicon.html5 {
+  background: url("webicons/webicon-html5-m.png"); }
+
+.no-svg .webicon.html5.large {
+  background: url("webicons/webicon-html5.png"); }
+
+.no-svg .webicon.html5.small {
+  background: url("webicons/webicon-html5-s.png"); }
+
+.svg .webicon.html5 {
+  background: url("webicons/webicon-html5.svg"); }
+
+.no-svg .webicon.icloud {
+  background: url("webicons/webicon-icloud-m.png"); }
+
+.no-svg .webicon.icloud.large {
+  background: url("webicons/webicon-icloud.png"); }
+
+.no-svg .webicon.icloud.small {
+  background: url("webicons/webicon-icloud-s.png"); }
+
+.svg .webicon.icloud {
+  background: url("webicons/webicon-icloud.svg"); }
+
+.no-svg .webicon.indiegogo {
+  background: url("webicons/webicon-indiegogo-m.png"); }
+
+.no-svg .webicon.indiegogo.large {
+  background: url("webicons/webicon-indiegogo.png"); }
+
+.no-svg .webicon.indiegogo.small {
+  background: url("webicons/webicon-indiegogo-s.png"); }
+
+.svg .webicon.indiegogo {
+  background: url("webicons/webicon-indiegogo.svg"); }
+
+.no-svg .webicon.instagram {
+  background: url("webicons/webicon-instagram-m.png"); }
+
+.no-svg .webicon.instagram.large {
+  background: url("webicons/webicon-instagram.png"); }
+
+.no-svg .webicon.instagram.small {
+  background: url("webicons/webicon-instagram-s.png"); }
+
+.svg .webicon.instagram {
+  background: url("webicons/webicon-instagram.svg"); }
+
+.no-svg .webicon.instapaper {
+  background: url("webicons/webicon-instapaper-m.png"); }
+
+.no-svg .webicon.instapaper.large {
+  background: url("webicons/webicon-instapaper.png"); }
+
+.no-svg .webicon.instapaper.small {
+  background: url("webicons/webicon-instapaper-s.png"); }
+
+.svg .webicon.instapaper {
+  background: url("webicons/webicon-instapaper.svg"); }
+
+.no-svg .webicon.kickstarter {
+  background: url("webicons/webicon-kickstarter-m.png"); }
+
+.no-svg .webicon.kickstarter.large {
+  background: url("webicons/webicon-kickstarter.png"); }
+
+.no-svg .webicon.kickstarter.small {
+  background: url("webicons/webicon-kickstarter-s.png"); }
+
+.svg .webicon.kickstarter {
+  background: url("webicons/webicon-kickstarter.svg"); }
+
+.no-svg .webicon.klout {
+  background: url("webicons/webicon-klout-m.png"); }
+
+.no-svg .webicon.klout.large {
+  background: url("webicons/webicon-klout.png"); }
+
+.no-svg .webicon.klout.small {
+  background: url("webicons/webicon-klout-s.png"); }
+
+.svg .webicon.klout {
+  background: url("webicons/webicon-klout.svg"); }
+
+.no-svg .webicon.lastfm {
+  background: url("webicons/webicon-lastfm-m.png"); }
+
+.no-svg .webicon.lastfm.large {
+  background: url("webicons/webicon-lastfm.png"); }
+
+.no-svg .webicon.lastfm.small {
+  background: url("webicons/webicon-lastfm-s.png"); }
+
+.svg .webicon.lastfm {
+  background: url("webicons/webicon-lastfm.svg"); }
+
+.no-svg .webicon.linkedin {
+  background: url("webicons/webicon-linkedin-m.png"); }
+
+.no-svg .webicon.linkedin.large {
+  background: url("webicons/webicon-linkedin.png"); }
+
+.no-svg .webicon.linkedin.small {
+  background: url("webicons/webicon-linkedin-s.png"); }
+
+.svg .webicon.linkedin {
+  background: url("webicons/webicon-linkedin.svg"); }
+
+.no-svg .webicon.mail {
+  background: url("webicons/webicon-mail-m.png"); }
+
+.no-svg .webicon.mail.large {
+  background: url("webicons/webicon-mail.png"); }
+
+.no-svg .webicon.mail.small {
+  background: url("webicons/webicon-mail-s.png"); }
+
+.svg .webicon.mail {
+  background: url("webicons/webicon-mail.svg"); }
+
+.no-svg .webicon.medium {
+  background: url("webicons/webicon-medium-m.png"); }
+
+.no-svg .webicon.medium.large {
+  background: url("webicons/webicon-medium.png"); }
+
+.no-svg .webicon.medium.small {
+  background: url("webicons/webicon-medium-s.png"); }
+
+.svg .webicon.medium {
+  background: url("webicons/webicon-medium.svg"); }
+
+.no-svg .webicon.mixi {
+  background: url("webicons/webicon-mixi-m.png"); }
+
+.no-svg .webicon.mixi.large {
+  background: url("webicons/webicon-mixi.png"); }
+
+.no-svg .webicon.mixi.small {
+  background: url("webicons/webicon-mixi-s.png"); }
+
+.svg .webicon.mixi {
+  background: url("webicons/webicon-mixi.svg"); }
+
+.no-svg .webicon.msn {
+  background: url("webicons/webicon-msn-m.png"); }
+
+.no-svg .webicon.msn.large {
+  background: url("webicons/webicon-msn.png"); }
+
+.no-svg .webicon.msn.small {
+  background: url("webicons/webicon-msn-s.png"); }
+
+.svg .webicon.msn {
+  background: url("webicons/webicon-msn.svg"); }
+
+.no-svg .webicon.openid {
+  background: url("webicons/webicon-openid-m.png"); }
+
+.no-svg .webicon.openid.large {
+  background: url("webicons/webicon-openid.png"); }
+
+.no-svg .webicon.openid.small {
+  background: url("webicons/webicon-openid-s.png"); }
+
+.svg .webicon.openid {
+  background: url("webicons/webicon-openid.svg"); }
+
+.no-svg .webicon.picasa {
+  background: url("webicons/webicon-picasa-m.png"); }
+
+.no-svg .webicon.picasa.large {
+  background: url("webicons/webicon-picasa.png"); }
+
+.no-svg .webicon.picasa.small {
+  background: url("webicons/webicon-picasa-s.png"); }
+
+.svg .webicon.picasa {
+  background: url("webicons/webicon-picasa.svg"); }
+
+.no-svg .webicon.pinterest {
+  background: url("webicons/webicon-pinterest-m.png"); }
+
+.no-svg .webicon.pinterest.large {
+  background: url("webicons/webicon-pinterest.png"); }
+
+.no-svg .webicon.pinterest.small {
+  background: url("webicons/webicon-pinterest-s.png"); }
+
+.svg .webicon.pinterest {
+  background: url("webicons/webicon-pinterest.svg"); }
+
+.no-svg .webicon.pocketapp {
+  background: url("webicons/webicon-pocketapp-m.png"); }
+
+.no-svg .webicon.pocketapp.large {
+  background: url("webicons/webicon-pocketapp.png"); }
+
+.no-svg .webicon.pocketapp.small {
+  background: url("webicons/webicon-pocketapp-s.png"); }
+
+.svg .webicon.pocketapp {
+  background: url("webicons/webicon-pocketapp.svg"); }
+
+.no-svg .webicon.potluck {
+  background: url("webicons/webicon-potluck-m.png"); }
+
+.no-svg .webicon.potluck.large {
+  background: url("webicons/webicon-potluck.png"); }
+
+.no-svg .webicon.potluck.small {
+  background: url("webicons/webicon-potluck-s.png"); }
+
+.svg .webicon.potluck {
+  background: url("webicons/webicon-potluck.svg"); }
+
+.no-svg .webicon.quora {
+  background: url("webicons/webicon-quora-m.png"); }
+
+.no-svg .webicon.quora.large {
+  background: url("webicons/webicon-quora.png"); }
+
+.no-svg .webicon.quora.small {
+  background: url("webicons/webicon-quora-s.png"); }
+
+.svg .webicon.quora {
+  background: url("webicons/webicon-quora.svg"); }
+
+.no-svg .webicon.orkut {
+  background: url("webicons/webicon-orkut-m.png"); }
+
+.no-svg .webicon.orkut.large {
+  background: url("webicons/webicon-orkut.png"); }
+
+.no-svg .webicon.orkut.small {
+  background: url("webicons/webicon-orkut-s.png"); }
+
+.svg .webicon.orkut {
+  background: url("webicons/webicon-orkut.svg"); }
+
+.no-svg .webicon.mercurial {
+  background: url("webicons/webicon-mercurial-m.png"); }
+
+.no-svg .webicon.mercurial.large {
+  background: url("webicons/webicon-mercurial.png"); }
+
+.no-svg .webicon.mercurial.small {
+  background: url("webicons/webicon-mercurial-s.png"); }
+
+.svg .webicon.mercurial {
+  background: url("webicons/webicon-mercurial.svg"); }
+
+.no-svg .webicon.rdio {
+  background: url("webicons/webicon-rdio-m.png"); }
+
+.no-svg .webicon.rdio.large {
+  background: url("webicons/webicon-rdio.png"); }
+
+.no-svg .webicon.rdio.small {
+  background: url("webicons/webicon-rdio-s.png"); }
+
+.svg .webicon.rdio {
+  background: url("webicons/webicon-rdio.svg"); }
+
+.no-svg .webicon.reddit {
+  background: url("webicons/webicon-reddit-m.png"); }
+
+.no-svg .webicon.reddit.large {
+  background: url("webicons/webicon-reddit.png"); }
+
+.no-svg .webicon.reddit.small {
+  background: url("webicons/webicon-reddit-s.png"); }
+
+.svg .webicon.reddit {
+  background: url("webicons/webicon-reddit.svg"); }
+
+.no-svg .webicon.renren {
+  background: url("webicons/webicon-renren-m.png"); }
+
+.no-svg .webicon.renren.large {
+  background: url("webicons/webicon-renren.png"); }
+
+.no-svg .webicon.renren.small {
+  background: url("webicons/webicon-renren-s.png"); }
+
+.svg .webicon.renren {
+  background: url("webicons/webicon-renren.svg"); }
+
+.no-svg .webicon.rss {
+  background: url("webicons/webicon-rss-m.png"); }
+
+.no-svg .webicon.rss.large {
+  background: url("webicons/webicon-rss.png"); }
+
+.no-svg .webicon.rss.small {
+  background: url("webicons/webicon-rss-s.png"); }
+
+.svg .webicon.rss {
+  background: url("webicons/webicon-rss.svg"); }
+
+.no-svg .webicon.skitch {
+  background: url("webicons/webicon-skitch-m.png"); }
+
+.no-svg .webicon.skitch.large {
+  background: url("webicons/webicon-skitch.png"); }
+
+.no-svg .webicon.skitch.small {
+  background: url("webicons/webicon-skitch-s.png"); }
+
+.svg .webicon.skitch {
+  background: url("webicons/webicon-skitch.svg"); }
+
+.no-svg .webicon.skype {
+  background: url("webicons/webicon-skype-m.png"); }
+
+.no-svg .webicon.skype.large {
+  background: url("webicons/webicon-skype.png"); }
+
+.no-svg .webicon.skype.small {
+  background: url("webicons/webicon-skype-s.png"); }
+
+.svg .webicon.skype {
+  background: url("webicons/webicon-skype.svg"); }
+
+.no-svg .webicon.soundcloud {
+  background: url("webicons/webicon-soundcloud-m.png"); }
+
+.no-svg .webicon.soundcloud.large {
+  background: url("webicons/webicon-soundcloud.png"); }
+
+.no-svg .webicon.soundcloud.small {
+  background: url("webicons/webicon-soundcloud-s.png"); }
+
+.svg .webicon.soundcloud {
+  background: url("webicons/webicon-soundcloud.svg"); }
+
+.no-svg .webicon.spotify {
+  background: url("webicons/webicon-spotify-m.png"); }
+
+.no-svg .webicon.spotify.large {
+  background: url("webicons/webicon-spotify.png"); }
+
+.no-svg .webicon.spotify.small {
+  background: url("webicons/webicon-spotify-s.png"); }
+
+.svg .webicon.spotify {
+  background: url("webicons/webicon-spotify.svg"); }
+
+.no-svg .webicon.stackoverflow {
+  background: url("webicons/webicon-stackoverflow-m.png"); }
+
+.no-svg .webicon.stackoverflow.large {
+  background: url("webicons/webicon-stackoverflow.png"); }
+
+.no-svg .webicon.stackoverflow.small {
+  background: url("webicons/webicon-stackoverflow-s.png"); }
+
+.svg .webicon.stackoverflow {
+  background: url("webicons/webicon-stackoverflow.svg"); }
+
+.no-svg .webicon.stumbleupon {
+  background: url("webicons/webicon-stumbleupon-m.png"); }
+
+.no-svg .webicon.stumbleupon.large {
+  background: url("webicons/webicon-stumbleupon.png"); }
+
+.no-svg .webicon.stumbleupon.small {
+  background: url("webicons/webicon-stumbleupon-s.png"); }
+
+.svg .webicon.stumbleupon {
+  background: url("webicons/webicon-stumbleupon.svg"); }
+
+.no-svg .webicon.svtle {
+  background: url("webicons/webicon-svtle-m.png"); }
+
+.no-svg .webicon.svtle.large {
+  background: url("webicons/webicon-svtle.png"); }
+
+.no-svg .webicon.svtle.small {
+  background: url("webicons/webicon-svtle-s.png"); }
+
+.svg .webicon.svtle {
+  background: url("webicons/webicon-svtle.svg"); }
+
+.no-svg .webicon.svn {
+  background: url("webicons/webicon-svn-m.png"); }
+
+.no-svg .webicon.svn.large {
+  background: url("webicons/webicon-svn.png"); }
+
+.no-svg .webicon.svn.small {
+  background: url("webicons/webicon-svn-s.png"); }
+
+.svg .webicon.svn {
+  background: url("webicons/webicon-svn.svg"); }
+
+.no-svg .webicon.tent {
+  background: url("webicons/webicon-tent-m.png"); }
+
+.no-svg .webicon.tent.large {
+  background: url("webicons/webicon-tent.png"); }
+
+.no-svg .webicon.tent.small {
+  background: url("webicons/webicon-tent-s.png"); }
+
+.svg .webicon.tent {
+  background: url("webicons/webicon-tent.svg"); }
+
+.no-svg .webicon.tripadvisor {
+  background: url("webicons/webicon-tripadvisor-m.png"); }
+
+.no-svg .webicon.tripadvisor.large {
+  background: url("webicons/webicon-tripadvisor.png"); }
+
+.no-svg .webicon.tripadvisor.small {
+  background: url("webicons/webicon-tripadvisor-s.png"); }
+
+.svg .webicon.tripadvisor {
+  background: url("webicons/webicon-tripadvisor.svg"); }
+
+.no-svg .webicon.tumblr {
+  background: url("webicons/webicon-tumblr-m.png"); }
+
+.no-svg .webicon.tumblr.large {
+  background: url("webicons/webicon-tumblr.png"); }
+
+.no-svg .webicon.tumblr.small {
+  background: url("webicons/webicon-tumblr-s.png"); }
+
+.svg .webicon.tumblr {
+  background: url("webicons/webicon-tumblr.svg"); }
+
+.no-svg .webicon.twitter {
+  background: url("webicons/webicon-twitter-m.png"); }
+
+.no-svg .webicon.twitter.large {
+  background: url("webicons/webicon-twitter.png"); }
+
+.no-svg .webicon.twitter.small {
+  background: url("webicons/webicon-twitter-s.png"); }
+
+.svg .webicon.twitter {
+  background: url("webicons/webicon-twitter.svg"); }
+
+.no-svg .webicon.viadeo {
+  background: url("webicons/webicon-viadeo-m.png"); }
+
+.no-svg .webicon.viadeo.large {
+  background: url("webicons/webicon-viadeo.png"); }
+
+.no-svg .webicon.viadeo.small {
+  background: url("webicons/webicon-viadeo-s.png"); }
+
+.svg .webicon.viadeo {
+  background: url("webicons/webicon-viadeo.svg"); }
+
+.no-svg .webicon.vine {
+  background: url("webicons/webicon-vine-m.png"); }
+
+.no-svg .webicon.vine.large {
+  background: url("webicons/webicon-vine.png"); }
+
+.no-svg .webicon.vine.small {
+  background: url("webicons/webicon-vine-s.png"); }
+
+.svg .webicon.vine {
+  background: url("webicons/webicon-vine.svg"); }
+
+.no-svg .webicon.vimeo {
+  background: url("webicons/webicon-vimeo-m.png"); }
+
+.no-svg .webicon.vimeo.large {
+  background: url("webicons/webicon-vimeo.png"); }
+
+.no-svg .webicon.vimeo.small {
+  background: url("webicons/webicon-vimeo-s.png"); }
+
+.svg .webicon.vimeo {
+  background: url("webicons/webicon-vimeo.svg"); }
+
+.no-svg .webicon.weibo {
+  background: url("webicons/webicon-weibo-m.png"); }
+
+.no-svg .webicon.weibo.large {
+  background: url("webicons/webicon-weibo.png"); }
+
+.no-svg .webicon.weibo.small {
+  background: url("webicons/webicon-weibo-s.png"); }
+
+.svg .webicon.weibo {
+  background: url("webicons/webicon-weibo.svg"); }
+
+.no-svg .webicon.windows {
+  background: url("webicons/webicon-windows-m.png"); }
+
+.no-svg .webicon.windows.large {
+  background: url("webicons/webicon-windows.png"); }
+
+.no-svg .webicon.windows.small {
+  background: url("webicons/webicon-windows-s.png"); }
+
+.svg .webicon.windows {
+  background: url("webicons/webicon-windows.svg"); }
+
+.no-svg .webicon.wordpress {
+  background: url("webicons/webicon-wordpress-m.png"); }
+
+.no-svg .webicon.wordpress.large {
+  background: url("webicons/webicon-wordpress.png"); }
+
+.no-svg .webicon.wordpress.small {
+  background: url("webicons/webicon-wordpress-s.png"); }
+
+.svg .webicon.wordpress {
+  background: url("webicons/webicon-wordpress.svg"); }
+
+.no-svg .webicon.xing {
+  background: url("webicons/webicon-xing-m.png"); }
+
+.no-svg .webicon.xing.large {
+  background: url("webicons/webicon-xing.png"); }
+
+.no-svg .webicon.xing.small {
+  background: url("webicons/webicon-xing-s.png"); }
+
+.svg .webicon.xing {
+  background: url("webicons/webicon-xing.svg"); }
+
+.no-svg .webicon.yahoo {
+  background: url("webicons/webicon-yahoo-m.png"); }
+
+.no-svg .webicon.yahoo.large {
+  background: url("webicons/webicon-yahoo.png"); }
+
+.no-svg .webicon.yahoo.small {
+  background: url("webicons/webicon-yahoo-s.png"); }
+
+.svg .webicon.yahoo {
+  background: url("webicons/webicon-yahoo.svg"); }
+
+.no-svg .webicon.yelp {
+  background: url("webicons/webicon-yelp-m.png"); }
+
+.no-svg .webicon.yelp.large {
+  background: url("webicons/webicon-yelp.png"); }
+
+.no-svg .webicon.yelp.small {
+  background: url("webicons/webicon-yelp-s.png"); }
+
+.svg .webicon.yelp {
+  background: url("webicons/webicon-yelp.svg"); }
+
+.no-svg .webicon.youtube {
+  background: url("webicons/webicon-youtube-m.png"); }
+
+.no-svg .webicon.youtube.large {
+  background: url("webicons/webicon-youtube.png"); }
+
+.no-svg .webicon.youtube.small {
+  background: url("webicons/webicon-youtube-s.png"); }
+
+.svg .webicon.youtube {
+  background: url("webicons/webicon-youtube.svg"); }
+
+.no-svg .webicon.youversion {
+  background: url("webicons/webicon-youversion-m.png"); }
+
+.no-svg .webicon.youversion.large {
+  background: url("webicons/webicon-youversion.png"); }
+
+.no-svg .webicon.youversion.small {
+  background: url("webicons/webicon-youversion-s.png"); }
+
+.svg .webicon.youversion {
+  background: url("webicons/webicon-youversion.svg"); }
+
+.no-svg .webicon.zerply {
+  background: url("webicons/webicon-zerply-m.png"); }
+
+.no-svg .webicon.zerply.large {
+  background: url("webicons/webicon-zerply.png"); }
+
+.no-svg .webicon.zerply.small {
+  background: url("webicons/webicon-zerply-s.png"); }
+
+.svg .webicon.zerply {
+  background: url("webicons/webicon-zerply.svg"); }
+
+/*pull help push and pull modules around*/
+.pull-left1 {
+  margin-left: -1em; }
+
+.pull-left2 {
+  margin-left: -2em; }
+
+.pull-left3 {
+  margin-left: -3em; }
+
+.pull-left4 {
+  margin-left: -4em; }
+
+.pull-left5 {
+  margin-left: -5em; }
+
+#emsl1 {
+  background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
+  background-position: right;
+  background-size: 200%; }
+
+#emsl2 {
+  background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
+  background-position: -0.5em -16.5em;
+  background-size: 230%; }
+
+#pic1 {
+  background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-a-basset-hound-in-a-car-40581856-600x387.jpg);
+  background-position: center;
+  background-size: 129%; }
+
+#pic2 {
+  background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-The-Oil-Pump-45429820-600x400.jpg);
+  background-position: center;
+  background-size: 132%; }
+
+#pic3 {
+  background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-VOLKETSWIL-AUGUST-The-Ro-26779283-600x400.jpg);
+  background-position: center;
+  background-size: 132%; }
+
+.module-carouselImages img {
+  width: 11.2em;
+  height: auto;
+  margin-right: .5em; }
+
+.module-carouselImages {
+  min-height: 147px; }
+
+.module-textareaWhite {
+  padding: 1em;
+  font-size: 2em;
+  float: right;
+  color: white; }
+
+.module-textareaWhite .headlines, .module-textareaWhite h1, .module-textareaWhite h2, .module-textareaWhite h3, .module-textareaWhite h4, .module-textareaWhite h5, .module-textareaWhite h6 {
+  color: white; }
+
+/*Force text on hero a little further down*/
+div.layout-40.module-textareaWhite {
+  position: relative;
+  top: 25px; }

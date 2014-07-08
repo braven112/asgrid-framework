@@ -1,0 +1,215 @@
+/*grid*/
+/* Row CSS from http://foundation.zurb.com/ */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  padding: .5em 0; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse > .grid,
+  .row.collapse > .grid {
+    padding-left: 0;
+    padding-right: 0; }
+  .row.collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }	
+.grid {
+	padding: .5em 0;
+	display: inline-block;
+	width: 100%;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	vertical-align: top;
+  	display: inline-block;
+
+}
+/*
+@media all and (max-width: 48em) {
+	body .grid {
+		display: block;
+		width: 100%;
+	}
+}
+*/
+.grid-container {
+	min-height: 5em;
+}
+
+
+/* Base 12 Grid System 5em=80px 60em=960px
+
+I'd like to figure out why I need to use this many decimals to make all the em's add up to 60em
+grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
+
+*/
+.grid-margin {margin-right: 2.12em;}
+.grid-1 {
+	width: 5.75em;
+}
+.grid-2 {
+	width: 10.75em;
+}
+.grid-3 {
+	@extend .grid-margin;
+	width: 13.8em;
+}
+.grid-4 {
+	@extend .grid-margin;
+	width: 18.8em;
+}
+.grid-4x3 {
+	margin-right: 2em;
+	width: 18.45em;
+	/*IE drops the last column so I moved it to 18.45 instead of 18.5*/
+}
+.grid-5 {
+	@extend .grid-margin;
+	width: 23.8em;
+}
+.grid-6 {
+	@extend .grid-margin;
+	width: 28.8em;
+}
+.grid-7 {
+	@extend .grid-margin;
+	width: 33.8em;
+}
+.grid-8 {
+	@extend .grid-margin;
+	width: 38.8em;
+}
+.grid-9 {
+	@extend .grid-margin;
+	width: 43.8em;
+}
+.grid-10 {
+	width: 49em;
+}
+.grid-11 {
+	width: 54em;
+}
+.grid-12 {
+	width: 60em;
+}
+
+/* Base 12 Grid System 5em=80px 60em=960px*/
+.grid-nomargin {
+	margin-right: 0em;
+	margin-left: -.1em;
+}
+.grid-1-nomargin {
+	@extend .grid-1;
+	@extend .grid-nomargin;
+}
+.grid-2-nomargin {
+	@extend .grid-2;
+	@extend .grid-nomargin;	
+}
+.grid-3-nomargin {
+	@extend .grid-3;
+	@extend .grid-nomargin;
+}
+.grid-4-nomargin {
+	@extend .grid-4;
+	@extend .grid-nomargin;		
+}
+.grid-4x3-nomargin {
+	@extend .grid-4x3;
+	@extend .grid-nomargin;		
+}
+.grid-5-nomargin {
+	@extend .grid-5;
+	@extend .grid-nomargin;
+}
+.grid-6-nomargin {
+	@extend .grid-6;
+	@extend .grid-nomargin;
+}
+.grid-7-nomargin {
+	@extend .grid-7;
+	@extend .grid-nomargin;
+}
+.grid-8-nomargin {
+	@extend .grid-8;
+	@extend .grid-nomargin;
+}
+.grid-9-nomargin {
+	@extend .grid-9;
+	@extend .grid-nomargin;
+}
+.grid-10-nomargin {
+	@extend .grid-10;
+	@extend .grid-nomargin;
+}
+.grid-11-nomargin {
+	@extend .grid-11;
+	@extend .grid-nomargin;
+}
+.grid-12-nomargin {
+	width: 60em;
+}
+.grid-40 {
+	width: 40%;
+	padding: 0 1em;	
+}
+.grid-50 {
+	width: 50%;
+	padding: 0 1em;	
+}
+.grid-60 {
+	width: 60%;
+	padding: 0 1em;	
+}
+.grid-67 {
+	width: 67%;
+	padding: 0 1em;
+}
+
+.grid-leftinsidebox {
+	width: 67%;
+	min-height: 5em;
+	margin-left: -1.5em;
+}
+/*
+@media all and (max-width: 980px) {
+	.grid-leftinsidebox {
+		margin-left: 0em;
+		max-width: 24em;
+	}
+
+}
+*/
+
+
+.grid-modulePrice {
+	width: 100%;
+	text-align: right;
+}

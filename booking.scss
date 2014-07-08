@@ -1,0 +1,61 @@
+/*booking formlet*/
+
+.acc_header {
+	position: relative;
+	cursor: pointer;
+	background: url(/content/~/media/Images/onSite/backgrounds/global-repeat.ashx) repeat-x bottom;
+	background-position: 0 -873px;
+	border: 1px solid #dedfe4;
+	border-bottom: 0;
+	color: #555;
+	background-image: none;
+	background-color: #008480;
+}
+
+.acc_header a, .acc_header a:hover {
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+
+.acc_content {
+	border: 1px solid #dedfe4;
+	border-top: 0;
+	border-bottom: 0;
+	display: none;
+	color: #222;
+	background: #fff url(/content/~/media/Images/onSite/backgrounds/global-repeat.ashx) bottom left repeat-x;
+	background-position: 0 -270px;
+	width: 432px;
+	background-image: none;
+	background-color: rgba(255, 255, 255, .7);
+}
+
+
+#tripModuleNav li {
+	background: url(/content/~/media/Images/onSite/backgrounds/home.ashx) 0 -26px;
+	cursor: pointer;
+	float: left;
+	height: 30px;
+	width: 88px;
+	background-image: none;
+	background-color: transparent;
+	border-radius: 5px;
+	height: auto;
+	width: auto;
+	padding: 0em 1.8em;
+	margin-right: 2px;
+}
+#tripModuleNav li.selectedTab {
+
+}
+
+#tripModuleNav li:hover {
+	background-color: #40639B;
+}
+
+#tripModuleNav a {
+display: block;
+font-weight: bold;
+color: $sitebtn-txtcolor;
+}
