@@ -69,7 +69,7 @@ I'd like to figure out why I need to use this many decimals to make all the em's
 grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
 
 */
-.grid-margin {margin-right: 2%;}
+.grid-margin {margin-right: 3%;}
 .grid-1 {
 	width: 8.3333%;
 }
@@ -78,15 +78,15 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 }
 .grid-3 {
 	@extend .grid-margin;
-	width: 25%;
+	width: 24.5%;
 }
 .grid-3x4 {
 	@extend .grid-margin;
-	width: 23.5%;
+	width: 22.75%;
 }
 .grid-4 {
 	@extend .grid-margin;
-	width: 33.3333%
+	width: 33%
 }
 .grid-4x3 {
 	margin-right: 2%;
@@ -95,23 +95,23 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 }
 .grid-5 {
 	@extend .grid-margin;
-	width: 42.6667%;
+	width: 42%;
 }
 .grid-6 {
 	@extend .grid-margin;
-	width: 49%;
+	width: 48.5%;
 }
 .grid-7 {
 	@extend .grid-margin;
-	width: 55.3333%;
+	width: 55%;
 }
 .grid-8 {
 	@extend .grid-margin;
-	width: 64.6667%;
+	width: 64%;
 }
 .grid-9 {
 	@extend .grid-margin;
-	width: 73%;
+	width: 72.5%;
 }
 .grid-10 {
 	width: 83.3333%;

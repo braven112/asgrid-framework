@@ -203,7 +203,7 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 
 */
 .grid-margin, .grid-3, .grid-3-nomargin, .grid-3x4, .grid-3x4-nomargin, .grid-4, .grid-4-nomargin, .grid-5, .grid-5-nomargin, .grid-6, .grid-6-nomargin, .grid-7, .grid-7-nomargin, .grid-8, .grid-8-nomargin, .grid-9, .grid-9-nomargin {
-  margin-right: 2%; }
+  margin-right: 3%; }
 
 .grid-1, .grid-1-nomargin {
   width: 8.3333%; }
@@ -212,32 +212,32 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   width: 16.6667%; }
 
 .grid-3, .grid-3-nomargin {
-  width: 25%; }
+  width: 24.5%; }
 
 .grid-3x4, .grid-3x4-nomargin {
-  width: 23.5%; }
+  width: 22.75%; }
 
 .grid-4, .grid-4-nomargin {
-  width: 33.3333%; }
+  width: 33%; }
 
 .grid-4x3, .grid-4x3-nomargin {
   margin-right: 2%;
   width: 32%; }
 
 .grid-5, .grid-5-nomargin {
-  width: 42.6667%; }
+  width: 42%; }
 
 .grid-6, .grid-6-nomargin {
-  width: 49%; }
+  width: 48.5%; }
 
 .grid-7, .grid-7-nomargin {
-  width: 55.3333%; }
+  width: 55%; }
 
 .grid-8, .grid-8-nomargin {
-  width: 64.6667%; }
+  width: 64%; }
 
 .grid-9, .grid-9-nomargin {
-  width: 73%; }
+  width: 72.5%; }
 
 .grid-10, .grid-10-nomargin {
   width: 83.3333%; }
@@ -1529,7 +1529,7 @@ h6 {
 #pic1 {
   background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-a-basset-hound-in-a-car-40581856-600x387.jpg);
   background-position: center;
-  background-size: 132%; }
+  background-size: 138%; }
 
 #pic2 {
   background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-The-Oil-Pump-45429820-600x400.jpg);
@@ -1547,7 +1547,7 @@ h6 {
   background-size: 132%; }
 
 .module-carouselImages img {
-  width: 11.2em;
+  width: 11.1em;
   height: auto;
   margin-right: .5em; }
 
