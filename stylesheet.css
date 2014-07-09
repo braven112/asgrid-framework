@@ -152,8 +152,8 @@ hr {
 
 .row .row {
   width: auto;
-  margin-left: -0.9375em;
-  margin-right: -0.9375em;
+  /*margin-left: -0.9375em;
+  margin-right: -0.9375em;*/
   margin-top: 0;
   margin-bottom: 0;
   max-width: none; }
@@ -293,7 +293,6 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 /*MODULE*/
 .module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer {
   min-height: 1em;
-  overflow: hidden;
   padding: 1.5em;
   width: auto; }
 
@@ -318,10 +317,15 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   padding-left: 1.5em; }
 
 .module-whiteContainer {
-  width: auto;
   background-color: white;
   display: block;
   box-shadow: 0 0 1px gainsboro; }
+
+.module-clearContainer {
+  min-height: 1em;
+  padding: 0;
+  line-height: 1.5em;
+  width: auto; }
 
 .module-darkaccentContainer {
   width: auto;
@@ -430,18 +434,33 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .btn {
   border-radius: 0px;
   background-color: #40639b;
-  width: 100%;
   color: white;
+  width: 100%;
   border: 0px solid;
-  padding: .5em;
-  font-size: 1.25em; }
+  padding: .5em 2em;
+  font-size: 1.25em;
+  text-decoration: none; }
+
+.btn-wrapper {
+  clear: both;
+  margin: 1em 0 0; }
+
+.btn-wrapper a {
+  display: inline; }
+
+.btn a {
+  color: white; }
+
+.btn a:hover {
+  color: white; }
 
 .btn-primary {
   background-color: #40639b; }
 
 .btn-primary:hover {
   background-color: #4e76b6;
-  cursor: pointer; }
+  cursor: pointer;
+  color: white; }
 
 /*HEADLINES*/
 /* .headlines class is applied to all h tags*/
@@ -449,7 +468,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   margin: 0;
   padding: 0;
   line-height: 1em;
-  color: #00245a; }
+  color: #454545; }
 
 .headlines-centered {
   text-align: center;
@@ -508,9 +527,6 @@ h6 {
 
 .module-MyAccountSignUp a#signUpLink {
   font-size: .9em; }
-
-.module-MyAccountSignIn {
-  margin: 1em 0 0 0; }
 
 .module-myAccountInput {
   width: 100%;

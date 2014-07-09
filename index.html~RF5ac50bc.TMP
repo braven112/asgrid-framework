@@ -201,11 +201,11 @@
   </div>
   </div>
 
-  <!-- Image with Text on right-->
+  <!-- Third Section-->
   <div class="row">
   <div class="grid grid-moduleWrapper">
     <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
-    <div class="grid grid-5">
+    <div class="grid grid-6">
       <div id="emsl2" class="module-whiteContainer">
         <div class="grid-leftinsidebox">
           <div class="module-emslSalmonContainer module-headlinesInBoxes">
@@ -217,46 +217,17 @@
       </div>
     </div>
 
-    <div class="grid grid-7-nomargin">
+    <div class="grid grid-6-nomargin">
+      <div class="grid-12">
         <div class="module-content module-clearContainer">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur.
-        <div class="row">
-          <div class="btn-wrapper"><a class="btn btn-primary" href="#">Button</a></div>
         </div>
+        <div class="btn-wrapper"><a class="btn btn-primary" href="#">Button</a></div>
       </div>     
-    </div>
-  </div>
-  </div>
-    <!-- Image with Text on left-->
-  <div class="row">
-  <div class="grid grid-moduleWrapper">
-    <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
-    <div class="grid grid-7">
-        <div class="module-content module-clearContainer">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur.
-        <div class="row">
-          <div class="btn-wrapper"><a class="btn btn-primary" href="#">Button</a></div>
-        </div>
-      </div>     
-    </div>
-    <div class="grid grid-5-nomargin">
-      <div id="emsl2" class="module-whiteContainer">
-        <div class="grid-leftinsidebox">
-          <div class="module-emslSalmonContainer module-headlinesInBoxes">
-            <h3>Lorem Ipsum</h3>
-            <h4>Subheader</h4>
-            <div class="grid-modulePrice"> <span class="module-price">$129</span> </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
   </div>

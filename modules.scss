@@ -1,7 +1,6 @@
 /*MODULE*/
 .module {
 	min-height: 1em;
-	overflow: hidden;
 	padding: 1.5em;
 	width: auto;
 }
@@ -34,10 +33,17 @@
 
 .module-whiteContainer {
 	@extend .module;	
-	width: auto;
 	background-color: $sitemodule-color;
 	display: block;
 	box-shadow: 0 0 1px $siteborder-color;
+
+}
+
+.module-clearContainer {
+	min-height: 1em;
+	padding: 0;
+	line-height: 1.5em;
+	width: auto;
 
 }
 

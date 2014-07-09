@@ -2,18 +2,26 @@
 .btn {
 	border-radius: 0px;
 	background-color: $base-color;
-	width: 100%;
 	color: $sitebtn-txtcolor;
+	width: 100%;
 	border:0px solid;
-	padding: .5em; 	
+	padding: .5em 2em; 	
 	font-size: 1.25em;
+	text-decoration: none;
 }
+
+.btn-wrapper { clear: both;margin: 1em 0 0}
+.btn-wrapper a {display: inline;}
+.btn a {color: $sitebtn-txtcolor;}
+.btn a:hover {color: $sitebtn-txtcolor; }
+
 .btn-primary {
 	background-color: $base-color;
 }
 .btn-primary:hover {
 	background-color: lighten($base-color, 8%);
 	cursor:pointer;
+	color: $sitebtn-txtcolor;
 }
 .btn-large {}
 .btn-small {}
