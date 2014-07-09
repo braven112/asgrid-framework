@@ -1,12 +1,53 @@
 /*grid*/
+/* Row CSS from http://foundation.zurb.com/ */
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5em;
+  padding: .5em 0; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+  .row.collapse > .grid,
+  .row.collapse > .grid {
+    padding-left: 0;
+    padding-right: 0; }
+  .row.collapse .row {
+    margin-left: 0;
+    margin-right: 0; }
+  .row .row {
+    width: auto;
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: none; }
+    .row .row:before, .row .row:after {
+      content: " ";
+      display: table; }
+    .row .row:after {
+      clear: both; }
+    .row .row.collapse {
+      width: auto;
+      margin: 0;
+      max-width: none; }
+      .row .row.collapse:before, .row .row.collapse:after {
+        content: " ";
+        display: table; }
+      .row .row.collapse:after {
+        clear: both; }	
 .grid {
 	padding: .5em 0;
-	display: inline-block;
 	width: 100%;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-collapse: collapse;
 	vertical-align: top;
+	float: left;
 
 }
 /*
@@ -20,9 +61,7 @@
 .grid-container {
 	min-height: 5em;
 }
-.grid-Picturecontainer {
-	min-height: 12em;
-}
+
 
 /* Base 12 Grid System 5em=80px 60em=960px
 
@@ -30,51 +69,55 @@ I'd like to figure out why I need to use this many decimals to make all the em's
 grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
 
 */
-.grid-margin {margin-right: 3%;}
+.grid-margin {margin-right: 2%;}
 .grid-1 {
-	width: 8.333%;
+	width: 8.3333%;
 }
 .grid-2 {
-	width: 16.667%;
+	width: 16.6667%;
 }
 .grid-3 {
 	@extend .grid-margin;
 	width: 25%;
 }
+.grid-3x4 {
+	@extend .grid-margin;
+	width: 23.5%;
+}
 .grid-4 {
 	@extend .grid-margin;
-	width: 33%;
+	width: 33.3333%
 }
 .grid-4x3 {
-	margin-right: 3.5%;
-	width: 31%;
+	margin-right: 2%;
+	width: 32%
 	/*IE drops the last column so I moved it to 18.45 instead of 18.5*/
 }
 .grid-5 {
 	@extend .grid-margin;
-	width: 42%;
+	width: 42.6667%;
 }
 .grid-6 {
 	@extend .grid-margin;
-	width: 48.5%;
+	width: 49%;
 }
 .grid-7 {
 	@extend .grid-margin;
-	width: 57%;
+	width: 55.3333%;
 }
 .grid-8 {
 	@extend .grid-margin;
-	width: 65%;
+	width: 64.6667%;
 }
 .grid-9 {
 	@extend .grid-margin;
-	width: 72%;
+	width: 73%;
 }
 .grid-10 {
-	width: 83.333%;
+	width: 83.3333%;
 }
 .grid-11 {
-	width: 91.667%;
+	width: 91.66667%;
 }
 .grid-12 {
 	width: 100%;
@@ -82,8 +125,8 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 
 /* Base 12 Grid System 5em=80px 60em=960px*/
 .grid-nomargin {
-	margin-right: 0em;
-	margin-left: -1.48%;
+	margin-right: 0%;
+	margin-left: 0%;
 }
 .grid-1-nomargin {
 	@extend .grid-1;
@@ -96,6 +139,10 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .grid-3-nomargin {
 	@extend .grid-3;
 	@extend .grid-nomargin;
+}
+.grid-3x4-nomargin {
+	@extend .grid-3x4;
+	@extend .grid-nomargin;		
 }
 .grid-4-nomargin {
 	@extend .grid-4;
@@ -134,7 +181,7 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 	@extend .grid-nomargin;
 }
 .grid-12-nomargin {
-	width: 100%;
+	width: 60em;
 }
 .grid-40 {
 	width: 40%;

@@ -179,12 +179,11 @@ hr {
 
 .grid {
   padding: .5em 0;
-  display: inline-block;
   width: 100%;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   vertical-align: top;
-  display: inline-block; }
+  float: left; }
 
 /*
 @media all and (max-width: 48em) {
@@ -203,54 +202,56 @@ I'd like to figure out why I need to use this many decimals to make all the em's
 grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
 
 */
-.grid-margin, .grid-3, .grid-3-nomargin, .grid-4, .grid-4-nomargin, .grid-5, .grid-5-nomargin, .grid-6, .grid-6-nomargin, .grid-7, .grid-7-nomargin, .grid-8, .grid-8-nomargin, .grid-9, .grid-9-nomargin {
-  margin-right: 2.12em; }
+.grid-margin, .grid-3, .grid-3-nomargin, .grid-3x4, .grid-3x4-nomargin, .grid-4, .grid-4-nomargin, .grid-5, .grid-5-nomargin, .grid-6, .grid-6-nomargin, .grid-7, .grid-7-nomargin, .grid-8, .grid-8-nomargin, .grid-9, .grid-9-nomargin {
+  margin-right: 2%; }
 
 .grid-1, .grid-1-nomargin {
-  width: 5.75em; }
+  width: 8.3333%; }
 
 .grid-2, .grid-2-nomargin {
-  width: 10.75em; }
+  width: 16.6667%; }
 
 .grid-3, .grid-3-nomargin {
-  width: 13.8em; }
+  width: 25%; }
+
+.grid-3x4, .grid-3x4-nomargin {
+  width: 23.5%; }
 
 .grid-4, .grid-4-nomargin {
-  width: 18.8em; }
+  width: 33.3333%; }
 
 .grid-4x3, .grid-4x3-nomargin {
-  margin-right: 2em;
-  width: 18.45em;
-  /*IE drops the last column so I moved it to 18.45 instead of 18.5*/ }
+  margin-right: 2%;
+  width: 32%; }
 
 .grid-5, .grid-5-nomargin {
-  width: 23.8em; }
+  width: 42.6667%; }
 
 .grid-6, .grid-6-nomargin {
-  width: 28.8em; }
+  width: 49%; }
 
 .grid-7, .grid-7-nomargin {
-  width: 33.8em; }
+  width: 55.3333%; }
 
 .grid-8, .grid-8-nomargin {
-  width: 38.8em; }
+  width: 64.6667%; }
 
 .grid-9, .grid-9-nomargin {
-  width: 43.8em; }
+  width: 73%; }
 
 .grid-10, .grid-10-nomargin {
-  width: 49em; }
+  width: 83.3333%; }
 
 .grid-11, .grid-11-nomargin {
-  width: 54em; }
+  width: 91.66667%; }
 
 .grid-12 {
-  width: 60em; }
+  width: 100%; }
 
 /* Base 12 Grid System 5em=80px 60em=960px*/
-.grid-nomargin, .grid-1-nomargin, .grid-2-nomargin, .grid-3-nomargin, .grid-4-nomargin, .grid-4x3-nomargin, .grid-5-nomargin, .grid-6-nomargin, .grid-7-nomargin, .grid-8-nomargin, .grid-9-nomargin, .grid-10-nomargin, .grid-11-nomargin {
-  margin-right: 0em;
-  margin-left: -.1em; }
+.grid-nomargin, .grid-1-nomargin, .grid-2-nomargin, .grid-3-nomargin, .grid-3x4-nomargin, .grid-4-nomargin, .grid-4x3-nomargin, .grid-5-nomargin, .grid-6-nomargin, .grid-7-nomargin, .grid-8-nomargin, .grid-9-nomargin, .grid-10-nomargin, .grid-11-nomargin {
+  margin-right: 0%;
+  margin-left: 0%; }
 
 .grid-12-nomargin {
   width: 60em; }
@@ -452,7 +453,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   margin: 0;
   padding: 0;
   line-height: 1em;
-  color: #40639b; }
+  color: #00245a; }
 
 .headlines-centered {
   text-align: center;
@@ -1516,7 +1517,7 @@ h6 {
 #pic1 {
   background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-a-basset-hound-in-a-car-40581856-600x387.jpg);
   background-position: center;
-  background-size: 129%; }
+  background-size: 132%; }
 
 #pic2 {
   background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-The-Oil-Pump-45429820-600x400.jpg);
@@ -1525,6 +1526,11 @@ h6 {
 
 #pic3 {
   background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-VOLKETSWIL-AUGUST-The-Ro-26779283-600x400.jpg);
+  background-position: center;
+  background-size: 132%; }
+
+#pic4 {
+  background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/07/1372326184_stritart-mesyaca-13-600x752.jpg);
   background-position: center;
   background-size: 132%; }
 
