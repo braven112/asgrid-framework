@@ -116,7 +116,7 @@ blockquote {
   vertical-align: baseline;
   width: 100%;
   color: #00245a;
-  background-color: #00245a; }
+  border-top: 1px solid #dddddd; }
 
 hr {
   border: none;
