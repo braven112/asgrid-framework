@@ -13,26 +13,29 @@
 
 
 #pic1 {
-background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-a-basset-hound-in-a-car-40581856-600x387.jpg);
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3814934-u4415-fr.jpg);
 background-position: center;
-background-size: 138%;
+background-size: 100%;
 }
 
 #pic2 {
-background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-The-Oil-Pump-45429820-600x400.jpg);
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/6241955-u4414-fr.jpg);
 background-position: center;
-background-size: 132%;
+background-size: 100%;
 }
 #pic3 {
-background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/06/bigstock-VOLKETSWIL-AUGUST-The-Ro-26779283-600x400.jpg);
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/gettyimages_200374167-001-u5242-fr.png);
 background-position: center;
-background-size: 132%;
+background-size: 100%;
 }
 #pic4 {
-background-image: url(http://www.youramazingpictures.com/wp-content/uploads/2014/07/1372326184_stritart-mesyaca-13-600x752.jpg);
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/cbp1162173-2-u5249-fr.jpg);
 background-position: center;
-background-size: 132%;
+background-size: 100%;
 }
+
+
+.grid-3x4 .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer {min-height: 9em;}
 
 .module-carouselImages img {width: 11.1em;height: auto;margin-right: .5em;}
 .module-carouselImages {min-height: 147px;}
@@ -54,5 +57,17 @@ div.layout-40.module-textareaWhite {
 position: relative;
 top: 25px;
 }
+
+#miles {
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3654241-u5666-fr.png);
+	background-position: center;
+	background-size: 100%;
+	min-height: 14.69em;
+	color: $sitebtn-txtcolor;
+}
+#milesText {position: relative;top: 10px}
+
+#miles a .headlines {	color: $sitebtn-txtcolor;}
+#miles a {	color: $sitebtn-txtcolor; text-decoration: none}
 
 
